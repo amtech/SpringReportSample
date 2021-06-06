@@ -19,6 +19,12 @@ public class BoardVO {
 			select * from tbl_board;
 			*/
 	private int bno;
+	private String title;
+	private String content;
+	private String writer;
+	private Date regDate;
+	private int viewCnt;
+	
 	public int getBno() {
 		return bno;
 	}
@@ -43,11 +49,11 @@ public class BoardVO {
 	public void setWriter(String writer) {
 		this.writer = writer;
 	}
-	public Date getRegData() {
-		return regData;
+	public Date getRegDate() {
+		return regDate;
 	}
-	public void setRegData(Date regData) {
-		this.regData = regData;
+	public void setRegDate(Date regDate) {
+		this.regDate = regDate;
 	}
 	public int getViewCnt() {
 		return viewCnt;
@@ -55,9 +61,5 @@ public class BoardVO {
 	public void setViewCnt(int viewCnt) {
 		this.viewCnt = viewCnt;
 	}
-	private String title;
-	private String content;
-	private String writer;
-	private Date regData;
-	private int viewCnt;
+	
 }
