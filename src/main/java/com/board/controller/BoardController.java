@@ -40,6 +40,11 @@ public class BoardController {
 
 	}
 	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public void getLogin() throws Exception {
+	    
+	}
+	
 	// 게시물 작성
 	@RequestMapping(value = "/write", method = RequestMethod.POST)
 	public String posttWirte(BoardVO vo) throws Exception {
@@ -82,7 +87,7 @@ public class BoardController {
 	  
 	 service.delete(bno);  
 
-	 return "redirect:/board/list";
+	 return "redirect:/board/listPageSearch?num=1";
 	}
 	// 게시물 목록 + 페이징 추가
 	@RequestMapping(value = "/listpage", method = RequestMethod.GET)
