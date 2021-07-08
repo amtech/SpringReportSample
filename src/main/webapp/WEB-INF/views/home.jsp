@@ -37,7 +37,7 @@
                 <form method="POST" id="register" action="/member/register" class="input-group">                 
                     <input type="text" id="user_id" name="user_id" class="input-field" placeholder="사용할 아이디" required>
                     <input type="password" id="user_pw" name="user_pw" class="input-field" placeholder="사용할 비밀번호" required>
-                    <input type="checkbox" class="checkbox"><span>Terms and conditions</span>
+                    <input type="checkbox" class="checkbox"><span>회원가입 동의</span>
                     <button class="submit">REGISTER</button>
                 </form>
             </div>
